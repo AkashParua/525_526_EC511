@@ -1,0 +1,25 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <climits>
+using namespace std;
+
+int factorial(int n){
+    
+    int p=1;
+    
+    for(int i=0;i<n;i++){
+        p *= i+1;
+    }
+    
+    return p;
+}
+
+int main() {
+    
+    int n;
+    cout<<"Enter the number: ";
+    cin>>n;
+    
+    cout<<"Factorial of "<<n<<"is: "<<factorial(n);
+    return 0;
+}
